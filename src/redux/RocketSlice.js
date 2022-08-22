@@ -5,13 +5,14 @@ import axios from 'axios';
 const initialState = [];
 
 // Base URL
-const rocketsUrl = 'https://api.spacexdata.com/v3/rockets';
+// Fetch data from the Rockets endpoint
+const rocketsApi = 'https://api.spacexdata.com/v3/rockets';
 
 // Async Action Creators
 export const fetchRocketsApi = createAsyncThunk(
   'rockets/fetchRocketsApi',
   async () => {
-    const response = await axios.get(rocketsUrl);
+    const response = await axios.get(rocketsApi);
     return response.data;
   },
 );
@@ -21,6 +22,7 @@ const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
   reducers: {
+    // Implement rocket booking
     reserveRocket: {
       reducer: (state, action) => state.map((el) => (
         el.rocketId === action.payload ? { ...el, rocketReserved: true } : el)),
@@ -28,6 +30,7 @@ const rocketsSlice = createSlice({
         payload: rocketId,
       }),
     },
+    // Implement rocket booking cancelation
     cancelRocket: {
       reducer: (state, action) => state.map((el) => (
         el.rocketId === action.payload ? { ...el, rocketReserved: false } : el)),
