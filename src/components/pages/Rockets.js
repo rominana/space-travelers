@@ -1,5 +1,10 @@
+import Rocket from '../Rocket';
+import '../styles/Rocket.css';
+
 const Rockets = () => (
-  <div><h1>Rockets</h1></div>
+  <div style={{ padding: '2rem' }}>
+    <Rocket />
+  </div>
 );
 
 export default Rockets;
