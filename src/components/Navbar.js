@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="logo">
         <div className="logo-container">
           <img src={logo} alt="planet" className="logo-container-img" />
-          <p>Space Travelers Hub</p>
+          <p> Space Travelers Hub</p>
         </div>
       </div>
       <nav className="nav-container">
@@ -28,6 +28,14 @@ const Navbar = () => {
               className={({ isActive }) => (isActive ? activeClassName : undefined)}
             >
               Missions
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/dragons"
+              className={({ isActive }) => (isActive ? activeClassName : undefined)}
+            >
+              Dragons
             </NavLink>
           </li>
           <li className="profile">

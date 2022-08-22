@@ -1,5 +1,5 @@
 const Dragons = () => (
-  <div><h1>Hello Dragons</h1></div>
+  <div><h1>Dragons</h1></div>
 );
 
 export default Dragons;
