@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/images/planet.png';
+import './styles/Navbar.css';
 
 const Navbar = () => {
   const activeClassName = 'underline';

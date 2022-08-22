@@ -1,5 +1,33 @@
 * {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 60px;
+}
+
+.nav-container {
+  align-items: center;
+}
+
+.nav-container ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
 }
