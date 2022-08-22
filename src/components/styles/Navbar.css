@@ -20,6 +20,7 @@
 .nav {
   display: flex;
   padding: 1rem;
+  padding-left: 8rem;
   border-bottom: 1px solid gray;
 }
 
@@ -42,7 +43,7 @@ ul.nav-container-items {
   font-weight: 700;
   font-size: 2rem;
   width: 100%;
-  padding-left: 15px;
+  padding-left: 5rem;
 }
 
 .logo-container {
