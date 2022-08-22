@@ -1,5 +1,10 @@
+import Mission from '../Mission';
+import '../styles/Mission.css';
+
 const Missions = () => (
-  <div><h1>New Missions</h1></div>
+  <div className="mission">
+    <Mission />
+  </div>
 );
 
 export default Missions;
