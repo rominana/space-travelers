@@ -1,15 +1,40 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  text-decoration: none;
+}
+
+.profile::before {
+  content: '|';
+  margin-right: 1.2rem;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.nav-items > * {
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 100%;
+  padding-left: 15px;
 }
 
 .logo-container {
@@ -19,15 +44,19 @@
 
 .logo-container img {
   height: 60px;
+  width: 4rem;
 }
 
 .nav-container {
   align-items: center;
+  padding: 1rem 10%;
 }
 
 .nav-container ul {
+  font-family: 'Roboto', sans-serif;
   display: flex;
   gap: 2rem;
   list-style: none;
   align-items: center;
+  text-decoration: none;
 }
