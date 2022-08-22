@@ -1,5 +1,6 @@
-const Dragons = () => (
-  <div><h1>Dragons</h1></div>
-);
+import Dragon from '../Dragon';
+import '../styles/Dragons.css';
+
+const Dragons = () => (<Dragon />);
 
 export default Dragons;
