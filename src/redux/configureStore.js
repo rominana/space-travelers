@@ -1,15 +1,16 @@
-import { configureStore, applyMiddleware } from '@reduxjs/toolkit';
-import thunk from 'redux-thunk';
-import missions from './missions';
-import rockets from './rockets';
+import { configureStore } from '@reduxjs/toolkit';
+import logger from 'redux-logger';
+import rocketsReducer from './RocketSlice';
+import misssionsReducer from './missions';
 import { dragonsReducer } from './dragons';
 
 const store = configureStore({
   reducer: {
-    missions: missions.reducer,
-    rockets: rockets.reducer,
+    rockets: rocketsReducer,
+    missions: misssionsReducer,
     dragons: dragonsReducer.reducer,
   },
-}, applyMiddleware(thunk));
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+});
 
 export default store;
