@@ -5,7 +5,6 @@ import '../styles/Profile.css';
 function Profile() {
   // rockets
   const rockets = useSelector((state) => state.rockets.filter((el) => el.rocketReserved === true));
-  // console.log(rockets);
   const myRockets = rockets && rockets.map((rocket) => (
     <tbody key={rocket.rocketId}>
       <tr>
