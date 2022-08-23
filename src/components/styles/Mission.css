@@ -1,6 +1,7 @@
-.table {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 4rem;
+* {
+  box-sizing: border-box;
+}
+
+.t-body:nth-child(even) {
+  background-color: whitesmoke;
 }
