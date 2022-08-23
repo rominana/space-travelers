@@ -33,7 +33,7 @@ function Profile() {
   return (
     <div className="profiles">
       <div>
-        <h2> My Rockets </h2>
+        <h2>My Rockets</h2>
         <table className="table table-bordered">{myRockets}</table>
       </div>
       <div>
@@ -47,4 +47,5 @@ function Profile() {
     </div>
   );
 }
+
 export default Profile;
