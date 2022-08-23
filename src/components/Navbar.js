@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="logo">
         <div className="logo-container">
           <img src={logo} alt="planet" className="logo-container-img" />
-          <p> Space Travelers Hub</p>
+          <p> Space Traveler&rsquo;s Hub</p>
         </div>
       </div>
       <nav className="nav-container">
