@@ -11,6 +11,7 @@ function RocketsCards({ rocket }) {
     rocketId, rocketName, rocketDesc, rocketImg, rocketReserved,
   } = rocket;
 
+  // HANDLERS
   const reserveHandler = (e) => {
     const data = e.target.id;
     dispatch(reserveRocket(data));
@@ -27,7 +28,7 @@ function RocketsCards({ rocket }) {
       <div className="rocketDesc">
         <h1 className="titleDesc">{rocketName}</h1>
         <p className="paraDesc">
-          {rocketReserved === true && (<span className="Reserved">Reserved&nbsp;</span>)}
+          {rocketReserved === true && (<span className="Reserved">Reserved</span>)}
           {rocketDesc}
         </p>
         {rocketReserved === true
