@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 3vw 7vw;
+}
+
+.dragon-container {
+  display: flex;
+  gap: 25px;
+}
+
+.dragon-container-img {
+  object-fit: contain;
+  width: 18%;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 15px;
+}
+
+.dragon-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dragon-info-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.dragon-info-description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #212529;
+}
+
+.dragon-info-button {
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  width: 30%;
+}

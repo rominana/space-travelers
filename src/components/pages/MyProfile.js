@@ -1,13 +1,37 @@
-const MyProfile = () => (
-  <div>
-    <h1>My Profile</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Pellentesque euismod, nisi eu consectetur consectetur,
-      nisl nisl consectetur nisl, eu consectetur nisl nisl euismod,
-      consectetur nisl nisl nisl.
-    </p>
-  </div>
-);
+import React from 'react';
+import { useSelector } from 'react-redux';
+import '../styles/Profile.css';
 
-export default MyProfile;
+function Profile() {
+  const missions = useSelector((state) => state.missions);
+  const reservedMissions = missions.filter((mission) => mission.join);
+  const newMissions = reservedMissions.map((reservedMission) => (
+    <tbody key={reservedMission.id}>
+      <tr>
+        <td>
+          {' '}
+          {reservedMission.mission_name}
+        </td>
+      </tr>
+    </tbody>
+  ));
+
+  return (
+    <div className="profiles">
+      <div>
+        <h2>My Rockets</h2>
+        <table className="table table-bordered">MyRochet</table>
+      </div>
+      <div>
+        <h2>My Dragons</h2>
+        <table className="table table-bordered">MyDrogon</table>
+      </div>
+      <div>
+        <h2>My Missions</h2>
+        <table className="table table-bordered">{newMissions}</table>
+      </div>
+    </div>
+  );
+}
+
+export default Profile;
