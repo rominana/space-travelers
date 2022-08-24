@@ -16,8 +16,8 @@
 }
 
 .dragon-container-img {
-  object-fit: contain;
-  width: 18%;
+  object-fit: cover;
+  width: 28%;
   box-shadow: 1px 1px 5px black;
   border-radius: 15px;
 }
@@ -31,6 +31,12 @@
 .dragon-info-title {
   font-size: 1.8rem;
   font-weight: 700;
+}
+
+.dragon-info-span {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
 .dragon-info-description {
@@ -48,5 +54,19 @@
   font-size: 1rem;
   cursor: pointer;
   background-color: #007bff;
-  width: 100px;
+  width: 100%;
+}
+
+.dragon-cancel-reserve {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.reserved {
+  background-color: #4169e1;
+  padding: 5px;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 0.5rem;
 }

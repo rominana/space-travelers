@@ -14,12 +14,14 @@ const DragonsList = () => {
     <div>
       {
         dragonsList.map((dragon) => (
-          <div key={dragon.id}>
+          <div key={dragon.dragonsId}>
             <Dragon
-              id={dragon.id}
+              dragonId={dragon.dragonsId}
               type={dragon.type}
-              name={dragon.id}
-              flickrImages0={dragon.flickr_images[0]}
+              name={dragon.name}
+              flickrImages0={dragon.flickrImages0}
+              dragonReserved={dragon.dragonReserved}
+              description={dragon.description}
             />
           </div>
         ))

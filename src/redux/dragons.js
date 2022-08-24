@@ -18,9 +18,31 @@ export const getDragons = createAsyncThunk(
 export const dragonsReducer = createSlice({
   name: 'dragons',
   initialState,
-  reducers: {},
-  extraReducers: (builder) => {
-    builder.addCase(getDragons.fulfilled, (state, action) => action.payload);
+  reducers: {
+    reserveDragon: {
+      reducer: (state, action) => state.map((e) => (
+        e.dragonsId === action.payload ? { ...e, dragonReserved: true } : e)),
+      prepare: (dragonsId) => ({
+        payload: dragonsId,
+      }),
+    },
+    cancelDragonReserve: {
+      reducer: (state, action) => state.map((e) => (
+        e.dragonsId === action.payload ? { ...e, dragonReserved: false } : e)),
+      prepare: (dragonsId) => ({
+        payload: dragonsId,
+      }),
+    },
   },
-
+  extraReducers: (builder) => {
+    builder.addCase(getDragons.fulfilled, (state, action) => action.payload.map((dragon) => ({
+      dragonsId: dragon.id,
+      type: dragon.type,
+      name: dragon.name,
+      flickrImages0: dragon.flickr_images[0],
+      description: dragon.description,
+    })));
+  },
 });
+
+export const { reserveDragon, cancelDragonReserve } = dragonsReducer.actions;
