@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #f1f1f1;
+  font-size: 1.2rem;
+}
+
+.titleDesc {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.rocketBox {
+  display: flex;
+  align-items: flex-start;
+  margin: 2rem 0 2rem 5rem;
+  padding: 0.5rem;
+  width: 90vw;
+  border: #e8e8e8 0.1em;
+  border-radius: 0.5rem;
+}
+
+.rocketImg {
+  height: 15rem;
+  width: 20rem;
+  object-fit: fill;
+  margin: 1rem;
+}
+
+.rocketDesc {
+  font-size: 1rem;
+  height: 12rem;
+  position: relative;
+  padding-top: 2rem;
+  line-height: 20px;
+  max-width: 70%;
+}
+
+.Reserved {
+  background-color: #349dc6;
+  color: #f5f5f5;
+  width: fit-content;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  font-size: 0.75rem;
+}
+
+.reserveBtn {
+  background-color: #4169e1;
+  color: #f5f5f5;
+  width: 12rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  bottom: 0;
+  margin: 1rem 0 1rem 0;
+}
+
+.cancelReserveBtn {
+  background-color: #f5f5f5;
+  color: #333;
+  width: 12rem;
+  height: 2.5rem;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  bottom: 0;
+  margin: 1rem 0 1rem 0;
+}

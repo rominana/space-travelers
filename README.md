@@ -1,75 +1,71 @@
+# Space-Travelers
+
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
-> Description the project.
+> It is a Single Page App (SPA) that display a list of Rockets, Mission, Deagon users can reserve rocket, join into missions, and reserve Dragon.
 
 
 ## Built With
+![](https://img.shields.io/badge/-HTML-orange) ![](https://img.shields.io/badge/-CSS-blue) ![](https://img.shields.io/badge/-JavaScript-yellow) ![](https://img.shields.io/badge/-React-cyan)
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- HTML
+- CSS
+- Javascript
+- linters
+- webpack
+- React
+- Redux
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+- Clone repository in your local machine
+- run `npm install` in the terminal.
+- run `npn run start`.
 
-### Setup
+For testing you can follow these step:
+- run `npn run test`.
 
-### Install
+## Live Demo
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+[Coming soon!]()
 
 ## Authors
 
-👤 **Author1**
+👤 **Mustafa Fahimy**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@fahimy143](https://github.com/fahimy143)
+- LinkedIn: [Mustafa Fahimy](https://www.linkedin.com/in/mustafa-fahimy-307566236/)
 
-👤 **Author2**
+**Romina Patino**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Romina Patino](https://github.com/rominana)
+- LinkedIn: [Romina Patino](https://www.linkedin.com/in/romina-patino/)
+
+**Rodrigo J. R. Nunes**
+
+- GitHub: [Rodrigo J. R. Nunes](https://github.com/Hannziegel)
+- LinkedIn: [Rodrigo J. R. Nunes](https://www.linkedin.com/in/rodrigojrnunes/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/fahimy143/math-magician/issues).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐️ to if you like this project!
+
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
+- Coding partner
+- Code reviewer
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](https://github.com/fahimy143/bookstroe-react-app/blob/Dev/LICENSE.md) licensed.
