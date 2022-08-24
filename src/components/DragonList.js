@@ -11,22 +11,21 @@ const DragonsList = () => {
   }, []);
 
   return (
-    <div>
+    <>
       {
         dragonsList.map((dragon) => (
-          <div key={dragon.dragonsId}>
-            <Dragon
-              dragonId={dragon.dragonsId}
-              type={dragon.type}
-              name={dragon.name}
-              flickrImages0={dragon.flickrImages0}
-              dragonReserved={dragon.dragonReserved}
-              description={dragon.description}
-            />
-          </div>
+          <Dragon
+            key={dragon.dragonsId}
+            dragonId={dragon.dragonsId}
+            type={dragon.type}
+            name={dragon.name}
+            flickrImages0={dragon.flickrImages0}
+            dragonReserved={dragon.dragonReserved}
+            description={dragon.description}
+          />
         ))
       }
-    </div>
+    </>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux/es/exports';
+import { useDispatch } from 'react-redux';
 import { reserveDragon, cancelDragonReserve } from '../redux/dragons';
 
 const Dragon = (props) => {
