@@ -30,6 +30,20 @@ function Profile() {
     </tbody>
   ));
 
+  // Dragons
+  const dragons = useSelector((state) => state.dragons);
+  const reservedDragons = dragons.filter((dragon) => dragon.dragonReserved);
+  const listReservedDragons = reservedDragons.map((reservedDragon) => (
+    <tbody key={reservedDragon.dragonId}>
+      <tr>
+        <td>
+          {' '}
+          {reservedDragon.name}
+        </td>
+      </tr>
+    </tbody>
+  ));
+
   return (
     <div className="profiles">
       <div>
@@ -38,7 +52,7 @@ function Profile() {
       </div>
       <div>
         <h2>My Dragons</h2>
-        <table className="table table-bordered">MyDrogon</table>
+        <table className="table table-bordered">{listReservedDragons}</table>
       </div>
       <div>
         <h2>My Missions</h2>
