@@ -15,7 +15,7 @@ const renderRocketList = () => {
 };
 
 describe('Test Rocket page', () => {
-  test('Match Snapshot & render Rocket List', () => {
+  test('Match Snapshot & render Rocket List on screen', () => {
     expect(renderRocketList().firstChild).toMatchSnapshot();
   });
 });
