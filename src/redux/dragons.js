@@ -41,6 +41,7 @@ export const dragonsReducer = createSlice({
       name: dragon.name,
       flickrImages0: dragon.flickr_images[0],
       description: dragon.description,
+      dragonReserved: false,
     })));
   },
 });
