@@ -10,6 +10,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
+        <Route index element={<Rockets />} />
         <Route path="/rockets" element={<Rockets />} />
         <Route path="/missions" element={<Missions />} />
         <Route path="/dragons" element={<Dragons />} />
