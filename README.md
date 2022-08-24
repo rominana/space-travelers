@@ -25,8 +25,8 @@ To get a local copy up and running follow these simple example steps.
 - run `npm install` in the terminal.
 - run `npn run start`.
 
-For testing you can follow these step:![](https://img.shields.io/badge/-HTML-orange) ![](https://img.shields.io/badge/-CSS-blue) ![](https://img.shields.io/badge/-JavaScript-yellow) ![](https://img.shields.io/badge/-React-cyan)
-- run `npm test` in the terminal.
+For testing you can follow these step:
+- run `npn run test`.
 
 ## Live Demo
 
@@ -46,8 +46,8 @@ For testing you can follow these step:![](https://img.shields.io/badge/-HTML-ora
 
 **Rodrigo J. R. Nunes**
 
-- GitHub: [Rodrigo J, R. Nunes](https://github.com/Hannziegel)
-- LinkedIn: [Rodrigo J, R. Nunes](https://www.linkedin.com/in/rodrigojrnunes/)
+- GitHub: [Rodrigo J. R. Nunes](https://github.com/Hannziegel)
+- LinkedIn: [Rodrigo J. R. Nunes](https://www.linkedin.com/in/rodrigojrnunes/)
 
 ## 🤝 Contributing
 
